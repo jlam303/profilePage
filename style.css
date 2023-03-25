@@ -1,7 +1,6 @@
 *{
     font-family: "font";
-    color: #42D9C8;
-    
+    color: #42D9C8;  
 }
 body{
     background-color: #1c1c1b;
@@ -40,7 +39,15 @@ h3{
     text-align: center;
 }
 #card2 {
-    grid-area: card2;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: card2;
+        text-align: center;
+        justify-items: center;
+}
+#card2 > h3{
+    text-decoration: underline .5vmin;
 }
 #card3 {
     display: flex;
@@ -50,7 +57,34 @@ h3{
     text-align: center;
 }
 #card4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: card4;
+    text-align: center;
+    justify-items: center;
+}
+.bar{
+    width: 90%;
+    height: 40%;
+    border: solid #42D9C8 .2vmin;
+    color: transparent;
+}
+.bar:nth-of-type(1){
+    background: linear-gradient(90deg,#42D9C8 0% 80%,#1c1c1b 80% 100%);
+}
+.bar:nth-of-type(2) {
+    background: linear-gradient(90deg, #42D9C8 0% 70%, #1c1c1b 70% 100%);
+}
+.bar:nth-of-type(3) {
+    background: linear-gradient(90deg, #42D9C8 0% 50%, #1c1c1b 50% 100%);
+}
+#barContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 @font-face {
     font-family: "font";
